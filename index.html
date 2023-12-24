@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sandbox-KeyEnter</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="box" id="box">The Box</div>
+   <script>
+      window.addEventListener("keydown", function(e){
+         if (e.code == "Enter") {
+            console.log(e)
+            document.getElementById("box").classList.add("green")
+         }
+      })
+   </script>
+</body>
+</html>
