@@ -7,11 +7,10 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="box" id="box">The Box</div>
+   <input class="box" id="box" type="text" value="The Box">
    <script>
       window.addEventListener("keydown", function(e){
          if (e.code == "Enter") {
-            console.log(e)
             document.getElementById("box").classList.add("green")
          }
       })
